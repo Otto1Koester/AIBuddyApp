@@ -23,3 +23,11 @@
 Создать файл `PROMPTS.md` с историей первых промптов проекта и добавить backend endpoint `GET /api/health` внутри Next.js App Router.
 
 Endpoint должен быть реализован как Route Handler в `src/app/api/health/route.ts` и возвращать JSON со статусом `ok` и сообщением `Backend API is working`.
+
+## Prompt 3 — Создание mock API для новичков и mood check-in
+
+Создать два mock API endpoint'а без подключения базы данных, Supabase и OpenAI:
+`GET /api/mock-trainees` для получения списка demo-новичков и
+`POST /api/mock-mood-checkin` для приема mood check-in.
+
+Endpoint `POST /api/mock-mood-checkin` должен проверять наличие `traineeId`, `mood` и `stressLevel`, возвращать ошибку 400 при неполных данных и успешный JSON-ответ с объектом `checkin` при корректном запросе.
