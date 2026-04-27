@@ -31,3 +31,12 @@ Endpoint должен быть реализован как Route Handler в `src
 `POST /api/mock-mood-checkin` для приема mood check-in.
 
 Endpoint `POST /api/mock-mood-checkin` должен проверять наличие `traineeId`, `mood` и `stressLevel`, возвращать ошибку 400 при неполных данных и успешный JSON-ответ с объектом `checkin` при корректном запросе.
+
+## Prompt 4 — Создание базовых страниц приложения
+
+Создать базовые frontend-страницы AI Buddy App на Next.js App Router:
+главную страницу `/`, страницу AI-бадди `/buddy`, mood check-in `/check-in`,
+профиль новичка `/profile` и HR-дашборд `/hr`.
+
+Страницы должны использовать TypeScript, Server Components и Tailwind CSS.
+На этом шаге не подключать Supabase, OpenAI, shadcn/ui, новые зависимости и не вызывать backend API из UI.
