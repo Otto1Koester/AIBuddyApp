@@ -40,3 +40,9 @@ Endpoint `POST /api/mock-mood-checkin` должен проверять нали�
 
 Страницы должны использовать TypeScript, Server Components и Tailwind CSS.
 На этом шаге не подключать Supabase, OpenAI, shadcn/ui, новые зависимости и не вызывать backend API из UI.
+
+## Prompt 5 — Подключение frontend-страниц к mock API
+
+Подключить frontend-страницы к существующим mock API: страницу `/hr` к `GET /api/mock-trainees`, а страницу `/check-in` к `POST /api/mock-mood-checkin`.
+
+На `/hr` данные новичков загружаются через client-side `fetch`, отображаются состояния загрузки и ошибки, статистика считается на frontend. На `/check-in` форма стала controlled form и отправляет JSON-запрос на backend endpoint с отображением success/error результата.
