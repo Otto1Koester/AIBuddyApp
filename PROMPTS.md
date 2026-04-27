@@ -46,3 +46,9 @@ Endpoint `POST /api/mock-mood-checkin` должен проверять нали�
 Подключить frontend-страницы к существующим mock API: страницу `/hr` к `GET /api/mock-trainees`, а страницу `/check-in` к `POST /api/mock-mood-checkin`.
 
 На `/hr` данные новичков загружаются через client-side `fetch`, отображаются состояния загрузки и ошибки, статистика считается на frontend. На `/check-in` форма стала controlled form и отправляет JSON-запрос на backend endpoint с отображением success/error результата.
+
+## Prompt 6 — Создание SQL-схемы Supabase
+
+Подготовить SQL-схему Supabase PostgreSQL для MVP AI Buddy App: создать таблицы `trainees`, `mood_checkins`, `chat_messages`, `sentiment_analysis`, `alerts` и `adaptation_tips`, включить RLS без policies и добавить demo-данные для HR/onboarding сценария.
+
+На этом шаге Supabase не подключается к Next.js-коду, новые зависимости и `.env.local` не создаются.
